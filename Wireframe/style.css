@@ -41,13 +41,14 @@ body {
 a {
   padding: var(--space);
   border: var(--line);
+  background-color: rgb(168, 168, 168);
   max-width: fit-content;
-  background-color: #bfbebe0a;
 }
 img,
 svg {
   width: 100%;
   object-fit: cover;
+  height: 50vh;
 }
 h1 {
   font-size: 2rem;
@@ -63,6 +64,11 @@ main {
 footer {
   bottom: 0;
   text-align: center;
+}
+footer a {
+  border: none;
+  padding: 0;
+  background: none;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
