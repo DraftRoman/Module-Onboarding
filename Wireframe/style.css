@@ -26,6 +26,13 @@ As well as useful links to learn more */
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
+header {
+   text-align: center;
+   position: fixed;
+   width: 100%;
+  background-color: var(--paper);
+
+ }
 body {
   background: var(--paper);
   color: var(--ink);
@@ -35,6 +42,7 @@ a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
+  background-color: #bfbebe0a;
 }
 img,
 svg {
@@ -43,10 +51,6 @@ svg {
 }
 h1 {
   font-size: 2rem;
-}
-header {
-  text-align: center;
-  margin: calc(var(--space) * 4) auto var(--space) auto;
 }
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
@@ -57,7 +61,6 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  position: fixed;
   bottom: 0;
   text-align: center;
 }
@@ -74,7 +77,10 @@ main {
   gap: var(--space);
   > *:first-child {
     grid-column: span 2;
+    margin-top: 9rem;
+
   }
+  
 }
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
