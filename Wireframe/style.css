@@ -28,9 +28,6 @@ As well as useful links to learn more */
  General rules for basic HTML elements in any context */
 header {
   text-align: center;
-  position: fixed;
-  width: 100%;
-  background-color: var(--paper);
   top: 0;
 
  }
@@ -68,6 +65,9 @@ main {
 footer {
   bottom: 0;
   text-align: center;
+  position: fixed;
+  width: 100%;
+  background-color: var(--paper);
 }
 footer a {
   border: none;
@@ -87,7 +87,6 @@ main {
   gap: var(--space);
   > *:first-child {
     grid-column: span 2;
-    margin-top: 9rem;
 
   }
   
