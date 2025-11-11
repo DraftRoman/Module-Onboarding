@@ -13,10 +13,58 @@
     </header>
     <main>
       <form>
+        <fieldset class="personal-info">
+          <label for="name"
+            >Name
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name"
+              required
+              minlength="2"
+              maxlength="12"
+              size="20"
+            />
+          </label>
+          <label for="email"
+            >email
+            <input type="email" id="email" name="email" required />
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Choose a color:</legend>
+          <label for="red"
+            ><input type="radio" id="red" name="color" value="red" checked />
+            Red</label
+          >
+          <label for="blue"
+            ><input type="radio" id="blue" name="color" value="blue" />
+            Blue</label
+          >
+          <label for="green"
+            ><input type="radio" id="green" name="color" value="green" />
+            Green</label
+          >
+        </fieldset>
+
+        <label for="size"
+          >Choose a size:
+          <select id="size" name="size">
+            <option value="xs">XS</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl">XXL</option>
+          </select>
+        </label>
         <!-- write your html here-->
         <!-- 
           try writing out the requirements first as comments
         this will also help you fill in your PR message later-->
+        <button type="submit">Submit</button>
       </form>
     </main>
     <footer>
