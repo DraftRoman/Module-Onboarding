@@ -6,6 +6,7 @@
     <title>My form exercise</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
@@ -14,27 +15,62 @@
     <main>
       <form>
         <fieldset class="personal-info">
+          <legend>Personal Information</legend>
           <label for="name"
             >Name
             <input
               type="text"
               id="name"
               name="name"
-              placeholder="Name"
+              placeholder="queen Elizabeth"
               required
               minlength="2"
-              maxlength="12"
+              maxlength="15"
               size="20"
             />
           </label>
           <label for="email"
             >email
-            <input type="email" id="email" name="email" required />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@gmail.com"
+              required
+            />
+          </label>
+          <label for="password">
+            Password
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="minimum 6 characters"
+              required
+              minlength="6"
+            />
           </label>
         </fieldset>
-
         <fieldset>
-          <legend>Choose a color:</legend>
+          <legend>Select your product</legend>
+          <label for="t-short"
+            ><input id="t-short" type="checkbox" checked />T-short
+          </label>
+          <label for="sweater"
+            ><input id="sweater" type="checkbox" disabled /><span
+              class="color-text"
+              >Sweater</span
+            ></label
+          >
+          <label for="jeans"
+            ><input id="jeans" type="checkbox" disabled /><span
+              class="color-text"
+              >Jeans</span
+            ></label
+          >
+        </fieldset>
+        <fieldset>
+          <legend>Choose a color</legend>
           <label for="red"
             ><input type="radio" id="red" name="color" value="red" checked />
             Red</label
@@ -60,16 +96,11 @@
             <option value="xxl">XXL</option>
           </select>
         </label>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-        <button type="submit">Submit</button>
+        <button type="submit" class="submit">Order</button>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>Homework Solution by Roman, <a href="#">My GitHub</a></h2>
     </footer>
   </body>
 </html>
