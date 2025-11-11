@@ -10,14 +10,10 @@ form {
     border-radius: 8px;
     background-color: #f9f9f9;
 }
-h1,h2 {
+h1 {
     text-align: center;
     margin-bottom: 1rem;
     text-shadow: #ccc 1px 1px 2px;
-}
-h2 {
-    font-size: 1.3rem;
-    font-weight: normal;
 }
 .personal-info {
     display: flex;
@@ -28,6 +24,7 @@ h2 {
 legend {
     font-weight: bold;
 }
+
 fieldset {
     display: flex;
     justify-content: space-between;
@@ -52,6 +49,25 @@ input[type="password"] {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+
+.red
+.blue
+.green {
+    display:inline-block; width:40px; height:20px; border:1px solid #ccc;
+}
+.red {
+    background:red;
+}
+.blue {
+    background:blue;
+}
+.green {
+    background:green;
+}
+.red:hover, .blue:hover, .green:hover {
+    transform: scale(1.2);
+}
+
 .submit {
     display: block;
     text-transform: uppercase;
@@ -68,4 +84,11 @@ input[type="password"] {
 }
 .submit:hover {
     background-color: #218838;
+}
+.footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #000000;
+    text-shadow: #ccc 1px 1px 2px;
+    font-size: 1rem;
 }
