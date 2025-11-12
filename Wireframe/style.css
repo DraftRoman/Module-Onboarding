@@ -26,17 +26,17 @@ As well as useful links to learn more */
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
-header {
+.header {
   text-align: center;
   top: 0;
 
  }
-body {
+.body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
 }
-a {
+.link {
   padding: var(--space);
   border: var(--line);
   background-color: rgb(204, 203, 203);
@@ -58,22 +58,7 @@ h1 {
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
-main {
-  max-width: var(--container);
-  margin: 0 auto calc(var(--space) * 4) auto;
-}
-footer {
-  bottom: 0;
-  text-align: center;
-  position: fixed;
-  width: 100%;
-  background-color: var(--paper);
-}
-footer a {
-  border: none;
-  padding: 0;
-  background: none;
-}
+
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
 Inspect this in Devtools and click the "grid" button in the Elements view
@@ -81,22 +66,24 @@ Play with the options that come up.
 https://developer.chrome.com/docs/devtools/css/grid
 https://gridbyexample.com/learn/
 */
-main {
+.main {
+  max-width: var(--container);
+  margin: 0 auto calc(var(--space) * 4 ) auto;
+  padding-bottom: calc(var(--space) * 2);
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space);
   > *:first-child {
     grid-column: span 2;
-
+    
   }
-  
 }
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
 Now laying out just the INSIDE of the repeated card/article design.
 Keeping things orderly and separate is the key to good, simple CSS.
 */
-article {
+.article {
   border: var(--line);
   padding-bottom: var(--space);
   text-align: left;
@@ -108,4 +95,18 @@ article {
   > img {
     grid-column: span 3;
   }
+}
+.footer {
+  bottom: 0;
+  text-align: center;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  background-color: var(--paper);
+}
+
+.footer-link {
+  border: none;
+  padding: 0;
+  background: none;
 }
