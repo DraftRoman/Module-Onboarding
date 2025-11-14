@@ -51,7 +51,7 @@
             />
           </label>
         </fieldset>
-        <fieldset>
+        <fieldset class="product-selection">
           <legend>Select your product</legend>
           <label for="t-short"
             ><input id="t-short" type="checkbox" checked />T-short
@@ -69,22 +69,49 @@
             ></label
           >
         </fieldset>
-        <fieldset>
-          <legend>Choose a color</legend>
-          <label for="red"
-            ><input type="radio" id="red" name="color" value="red" checked />
-            <span class="red"></span
-          ></label>
-          <label for="blue"
-            ><input type="radio" id="blue" name="color" value="blue" />
-            <span class="blue"></span
-          ></label>
-          <label for="green"
-            ><input type="radio" id="green" name="color" value="green" />
-            <span class="green"></span
-          ></label>
+        <fieldset class="color-selection">
+          <legend>Select the color</legend>
+          <label class="image-small">
+            <input type="radio" name="color" value="red" checked required />
+            <img class="color-image" src="./images/red.avif" alt="red color" />
+          </label>
+          <label class="image-small">
+            <input type="radio" name="color" value="blue" />
+            <img class="color-image" src="./images/blue.png" alt="blue color" />
+          </label>
+          <label class="image-small">
+            <input type="radio" name="color" value="green" />
+            <img
+              class="color-image"
+              src="./images/green.jpg"
+              alt="green color"
+            />
+          </label>
+          <label class="image-small">
+            <input type="radio" name="color" value="yellow" />
+            <img
+              class="color-image"
+              src="./images/yellow.png"
+              alt="yellow color"
+            />
+          </label>
+          <label class="image-small">
+            <input type="radio" name="color" value="black" />
+            <img
+              class="color-image"
+              src="./images/black.png"
+              alt="black color"
+            />
+          </label>
+          <label class="image-small">
+            <input type="radio" name="color" value="white" />
+            <img
+              class="color-image"
+              src="./images/white.jpg"
+              alt="white color"
+            />
+          </label>
         </fieldset>
-
         <label for="size"
           >Choose a size:
           <select id="size" name="size">
