@@ -21,7 +21,7 @@
         <fieldset class="personal-info">
           <legend>Personal Information</legend>
           <label for="name"
-            >Name
+            >Name*
             <input
               type="text"
               id="name"
@@ -31,16 +31,18 @@
               minlength="2"
               maxlength="15"
               size="20"
+              aria-describedby="name-validation"
             />
           </label>
           <label for="email"
-            >Email
+            >Email*
             <input
               type="email"
               id="email"
               name="email"
               placeholder="example@gmail.com"
               required
+              aria-describedby="email-validation"
             />
           </label>
           <label for="phone">
@@ -50,12 +52,12 @@
               id="phone"
               name="phone"
               placeholder="+123 456 7890"
-              required
               pattern="\+\d{1,3}([ -]?\d{2,}){2,}$"
+              aria-describedby="phone-validation"
             />
           </label>
           <label for="password">
-            Password
+            Password*
             <input
               type="password"
               id="password"
@@ -63,13 +65,14 @@
               placeholder="minimum 6 characters"
               required
               minlength="6"
+              aria-describedby="password-validation"
             />
           </label>
         </fieldset>
         <fieldset class="product-selection">
-          <legend>Select your product</legend>
+          <legend>Select your product*</legend>
           <label for="t-short"
-            ><input id="t-short" type="checkbox" checked />T-short
+            ><input id="t-short" type="checkbox" checked required />T-short
           </label>
           <label for="sweater"
             ><input id="sweater" type="checkbox" disabled /><span
